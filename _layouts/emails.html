@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link" href="/satoshi/bitcoin-whitepaper">Bitcoin Whitepaper</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/satoshi/emails">Emails</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/satoshi/forumposts">Forum Posts</a>
+  </li>
+</ul>
+
+<hr>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Mailing List</th>
+      <th scope="col">Title</th>
+      <th scope="col">Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for post in site.categories.emails reversed%}
+    <tr>
+      <td>{{ post.list }}</td>
+      <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+      <td>{{ post.time }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

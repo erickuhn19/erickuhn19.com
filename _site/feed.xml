@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-19T11:03:11-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">erickuhn19</title><subtitle>Product Management + Bitcoin</subtitle><entry><title type="html">Google I/O 2016 thoughts</title><link href="http://localhost:4000/blog/2016/05/23/Google-IO-2016-thoughts.html" rel="alternate" type="text/html" title="Google I/O 2016 thoughts" /><published>2016-05-23T00:00:00-07:00</published><updated>2016-05-23T00:00:00-07:00</updated><id>http://localhost:4000/blog/2016/05/23/Google-IO-2016-thoughts</id><content type="html" xml:base="http://localhost:4000/blog/2016/05/23/Google-IO-2016-thoughts.html">&lt;p&gt;This isn’t going to be a full write up of Google I/O 2016. There are many that do a great job of that, you can read &lt;a href=&quot;http://techcrunch.com/gallery/everything-you-need-to-know-from-the-2016-google-io-keynote/&quot;&gt;TechCrunch’s here&lt;/a&gt;, &lt;a href=&quot;http://www.theverge.com/2016/5/18/11701030/google-io-2016-keynote-highlights-announcements-recap&quot;&gt;The Verge here&lt;/a&gt;, and &lt;a href=&quot;http://thenextweb.com/google/2016/05/20/google-io-2016-recap-everything-need-know/#gref&quot;&gt;The Next Web here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m going to touch on the two things that I am really excited about. The first is Google Home. I’ve been excited about Amazon’s Echo but haven’t jumped in yet. I’ve read and seen examples where the Echo can be a really cool utility because of it’s always listening functionality. I air on the side of Siracusa here &lt;a href=&quot;http://atp.fm/episodes/170&quot;&gt;(listen to the ATP 170 to hear his thoughts)&lt;/a&gt; and think that the the full stack integrations with merchants isn’t there yet, so it won’t be able to do the things I really would like it to do. However, if I trust any company to do this really well, it’s Google. Google’s core competency is in big data processing and machine learning which is exactly what this product is meant for. I will 100% be a buyer of this product.&lt;/p&gt;
+
+&lt;p&gt;If only my new Apple TV had the always listening functionality with enhanced microphones. Apple could have already had a horse in this race. Siri on iPhone and Apple Watch isn’t sufficient because the ‘hey siri’ is way too hit or miss.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://marco.org/2016/05/21/avoiding-blackberrys-fate&quot;&gt;Marco Arment writes up a great piece&lt;/a&gt; on his fear that Apple is not focusing enough on the machine learning/AI strategy, where its competitors already have an advantage. Let’s see if Apple opens up a Siri API at WWDC next month.&lt;/p&gt;
+
+&lt;p&gt;The other Google IO announcement that is really exciting and I plan on diving in much deeper with, is &lt;a href=&quot;https://firebase.google.com/&quot;&gt;Firebase.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Firebase was purchased around 18 months ago and this is the &lt;a href=&quot;http://www.theverge.com/2016/5/18/11704050/google-firebase-baas-facebook-parse-google-io-2016&quot;&gt;first major addition to the platform.&lt;/a&gt; With &lt;a href=&quot;http://blog.parse.com/announcements/moving-on/&quot;&gt;Parse shutting down&lt;/a&gt; this is a welcome to the developer community that want to rely on back end as a service (BaaS) platforms. I am personally excited and already diving into the documentation to see how I could utilize this service in my next side project. The reason why it’s so intriguing? Google is building this platform to be multi channel: iOS, Android and Web. Back end services are one of those things Google does well and this update to Firebase is going to help fill the void where Parse left off.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">This isn’t going to be a full write up of Google I/O 2016. There are many that do a great job of that, you can read TechCrunch’s here, The Verge here, and The Next Web here.</summary></entry><entry><title type="html">Solving customer problems in payments</title><link href="http://localhost:4000/blog/2016/05/18/Solving-customer-problems-in-payments.html" rel="alternate" type="text/html" title="Solving customer problems in payments" /><published>2016-05-18T00:00:00-07:00</published><updated>2016-05-18T00:00:00-07:00</updated><id>http://localhost:4000/blog/2016/05/18/Solving%20customer%20problems%20in%20payments</id><content type="html" xml:base="http://localhost:4000/blog/2016/05/18/Solving-customer-problems-in-payments.html">&lt;p&gt;An interesting announcement was made this week in the payments world. MCX is laying off 30 people and postponing their launch of the CurrentC mobile payment app. You can read about the announcement on &lt;a href=&quot;http://techcrunch.com/2016/05/16/mcx-postpones-national-rollout-of-apple-pay-rival-currentc-lays-off-30-to-focus-on-banks&quot;&gt;TechCrunch&lt;/a&gt;. &lt;a href=&quot;http://daringfireball.net/2016/05/translation_mcx&quot;&gt;John Gruber, on his site Daring Fireball&lt;/a&gt; does a comical, yet glaringly true translation of the comments made by the CEO of MCX. And &lt;a href=&quot;http://www.pymnts.com/news/mobile-payments/2016/mcx-currentc-mobile-wallet-postponed/&quot;&gt;PYMNTS.com&lt;/a&gt; has a write up about the story that brings up pressing questions to be answered in the mobile payments space:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If we’ve learned anything over the last several years when watching the mobile payments field take shape, it’s that absent something that solves a problem for a consumer or adds value to their experience, innovators have nothing left but an empty bank account to show for their efforts. And the longer that it takes for the value exchange to be recognized and that “ignition” to happen, the more likely it is that a superior offer comes along to take its place.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This point is essential. The plastic cards have been solving the problems of consumers for years. The next wave of solutions needs to solve a new problem and really add value to users.&lt;/p&gt;
+
+&lt;p&gt;This got me thinking about an &lt;a href=&quot;https://stratechery.com/2015/chase-pay-and-the-payments-stack-apple-pay-and-opportunity-cost-apply-aggregation-theory/&quot;&gt;article&lt;/a&gt; I read late last year echoing the same sentiment:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I’ll jump straight to the punchline: Chase Pay will fail. Understanding why, though, is interesting, and the fact this exists at all should be worrying from an Apple perspective.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;First off, like most products produced by companies which don’t owe their existence or financial performance to the quality of the user experience, the product already sounds like a complete mess: you pay with QR codes from the Chase app, except for when you need QR codes from the MCX app, and hey, you can sometimes take a photo of your check and not use QR codes as well! It’s ridiculous, and as I’ve said about payments from the beginning, whatever product succeeds credit cards has to be significantly easier to use; inertia is a powerful thing, which means the delta of improvement in convenience in particular (plus security and usefulness and all the other factors that you can attribute to a product) has to be massive. And, given just how convenient credit cards are, a new payment solution has to basically have zero friction — and this Chase product sounds like it has a lot.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I think these are all the right conversations to be having. Solving the needs of consumers has to be the focus in mobile payments and will be the catalyst to drive adoption.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">An interesting announcement was made this week in the payments world. MCX is laying off 30 people and postponing their launch of the CurrentC mobile payment app. You can read about the announcement on TechCrunch. John Gruber, on his site Daring Fireball does a comical, yet glaringly true translation of the comments made by the CEO of MCX. And PYMNTS.com has a write up about the story that brings up pressing questions to be answered in the mobile payments space:</summary></entry><entry><title type="html">Apple shortens app review times</title><link href="http://localhost:4000/blog/2016/05/14/Apple-shortens-app-review-times.html" rel="alternate" type="text/html" title="Apple shortens app review times" /><published>2016-05-14T00:00:00-07:00</published><updated>2016-05-14T00:00:00-07:00</updated><id>http://localhost:4000/blog/2016/05/14/Apple-shortens-app-review-times</id><content type="html" xml:base="http://localhost:4000/blog/2016/05/14/Apple-shortens-app-review-times.html">&lt;p&gt;There was been much talk about Apple competing and generating revenue as a service based business. If you haven’t read the &lt;a href=&quot;https://stratechery.com/2016/apples-organizational-crossroads/&quot;&gt;Stratechery blog post&lt;/a&gt; on it, it’s a must read. Now there are reports that Apple is significantly cutting app review times.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.bloomberg.com/news/articles/2016-05-12/apple-shortens-app-review-times-in-push-to-boost-service-sales&quot;&gt;From Bloomberg :&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Apple Inc. has cut the approval time for new submissions to its App Store from more than a week to less than two days, part of a broader push to increase revenue from services including mobile applications.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is a long awaited step in the right direction, however Apple still needs to focus on improving discoverability in the app store. Perhaps a purge of the massive volume of terrible apps in the store, especially the ones that haven’t been updated in years. Quality &amp;gt; Quantity&lt;/p&gt;
+
+&lt;p&gt;Listen to Marco and Underscore talk about it on &lt;a href=&quot;https://overcast.fm/+Fgm1ElCi0&quot;&gt;Under the Radar: 27: Fast App Review.&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">There was been much talk about Apple competing and generating revenue as a service based business. If you haven’t read the Stratechery blog post on it, it’s a must read. Now there are reports that Apple is significantly cutting app review times.</summary></entry><entry><title type="html">Gboard</title><link href="http://localhost:4000/blog/2016/05/02/Gboard.html" rel="alternate" type="text/html" title="Gboard" /><published>2016-05-02T00:00:00-07:00</published><updated>2016-05-02T00:00:00-07:00</updated><id>http://localhost:4000/blog/2016/05/02/Gboard</id><content type="html" xml:base="http://localhost:4000/blog/2016/05/02/Gboard.html">&lt;p&gt;Google has announced today it’s launching a keyboard for iOS called &lt;a href=&quot;https://googleblog.blogspot.com/2016/05/gboard-search-gifs-emojis-keyboard.html&quot;&gt;Gboard.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://2.bp.blogspot.com/-ALxOB9Ab_9A/VzQuQB1vl5I/AAAAAAAASRo/0gE-Dij5TIEvUIY3zDcvQtivBEQ23VkuwCLcB/s1600/gboard_gif_regularSearch.gif&quot; alt=&quot;GBoard&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href=&quot;http://techcrunch.com/2016/05/12/google-launches-gboard-an-ios-keyboard-that-lets-you-search-without-a-browser/&quot;&gt;TechCrunch:&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Of course, the most interesting feature of this keyboard is its direct integration with Google’s services.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;By tapping the included “G” icon, you’re able to immediately search Google without exiting your keyboard and launching a browser or the Google app.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This allows you to easily search for things like flight times, news articles, restaurant and business listings, weather and more right from your keyboard, then just tap to paste that information into your chat. (You’ll need to give the app access to your location the first time you launch this feature.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’m surprised this move did not come sooner, as Microsoft has already realized the power of integrating itself into the keyboard. The SwiftKey acquisition was a telling sign that this space is going to start to heat up.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Google has announced today it’s launching a keyboard for iOS called Gboard.</summary></entry><entry><title type="html">The not so obvious problem for iOS developers</title><link href="http://localhost:4000/blog/2016/01/02/The-not-so-obvious-problem-for-iOS-developers.html" rel="alternate" type="text/html" title="The not so obvious problem for iOS developers" /><published>2016-01-02T00:00:00-08:00</published><updated>2016-01-02T00:00:00-08:00</updated><id>http://localhost:4000/blog/2016/01/02/The-not-so-obvious-problem-for-iOS-developers</id><content type="html" xml:base="http://localhost:4000/blog/2016/01/02/The-not-so-obvious-problem-for-iOS-developers.html">&lt;p&gt;Recently my new company provided me with an 16GB iPhone 6S. I did everything in my power to circumvent this model, as I was using a iPhone 6 with 64GB at a 70% capacity. Switching to the 16GB seemed unfathomable. Since two iPhones in my pocket was not going to be an option, I told myself I would make this work. First, I needed to make some ground rules or this was going to be a disaster.&lt;/p&gt;
+
+&lt;p&gt;I started with creating a new phone and not installing my iCloud back up. I had 244 non-Apple apps on my phone and knew I needed to narrow this down. Only my most used apps were going to make the cut. This was a herculean challenge but a good exercise to think about what I was receiving the most value from. As of this writing I only downloaded 40 but I feel like I cut too many corners. One thing I had going for me is I don’t use any music on my phone since I use Spotify.&lt;/p&gt;
+
+&lt;p&gt;The most glaring problem I have with this new set up is my new trepidation to try out new apps. Is this a problem other people think about? In the past I would try out apps on a whim and keep them around even if it’s a one time use case. Now my new world view is drastically different because of the limited space. This makes me uncomfortable since I ‘m a Product Manager in the mobile space. Testing a large number of apps is part of the job description.&lt;/p&gt;
+
+&lt;p&gt;Now that I’ve given my personal account how this phone affects me. Let’s think about it in a broader context and what are the ripple effects for the ecosystem.&lt;/p&gt;
+
+&lt;p&gt;So I’ve read all the reports about the amount of apps the average person uses per day &lt;a href=&quot;http://techcrunch.com/2015/06/22/consumers-spend-85-of-time-on-smartphones-in-apps-but-only-5-apps-see-heavy-use/#.vyo3cp:5bJy&quot;&gt;(5)&lt;/a&gt; and how many she will keep on her phone &lt;a href=&quot;http://mashable.com/2013/09/05/most-apps-download-countries/&quot;&gt;(25)&lt;/a&gt;, but that is just data. The important question is why are people limiting their app consumption. Is it a personal preference or a choice they’re forced to make? This distinction is important as the app ecosystem’s vibrancy of new apps depends on it.&lt;/p&gt;
+
+&lt;p&gt;Let’s run with the idea that the vast majority of people own a 16GB iPhone. This is a safe assumption thanks to some data from the UK that says &lt;a href=&quot;http://www.businessinsider.com/iphone-storage-data-market-share-2014-12?r=UK&amp;amp;IR=T&quot;&gt;91% of Telefonica users have the 16GB model.&lt;/a&gt; Let’s make another assumption and say the majority of those people run into a shortage of space on a frequent basis. If this is the case, then the obvious statement is Apple is not giving the user the best experience. The less obvious statement. App developers are experiencing a constraint in growth outside of their control.&lt;/p&gt;
+
+&lt;p&gt;Yes, Apple launched app thinning and reduced the size of OS updates. But that won’t solve the problem overnight. A simple thought experiment. If someone needed to choose between photos of their loved ones and the newest app. Which would they choose? The problem for app developers is, why do they have to?&lt;/p&gt;
+
+&lt;p&gt;This is an important observation as we increasingly rely on software to make improvements in our lives. As a Product Manager, it is more important than ever to bring real value to your users. Your not only competing for the user’s time and attention. You are competing for space on their phone.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Recently my new company provided me with an 16GB iPhone 6S. I did everything in my power to circumvent this model, as I was using a iPhone 6 with 64GB at a 70% capacity. Switching to the 16GB seemed unfathomable. Since two iPhones in my pocket was not going to be an option, I told myself I would make this work. First, I needed to make some ground rules or this was going to be a disaster.</summary></entry><entry><title type="html">Going Mobile</title><link href="http://localhost:4000/blog/2015/09/18/Going-Mobile.html" rel="alternate" type="text/html" title="Going Mobile" /><published>2015-09-18T00:00:00-07:00</published><updated>2015-09-18T00:00:00-07:00</updated><id>http://localhost:4000/blog/2015/09/18/Going-Mobile</id><content type="html" xml:base="http://localhost:4000/blog/2015/09/18/Going-Mobile.html">&lt;p&gt;I started my programming journey almost a year ago and I’ve recently had a change in philosophy. I’ve decided to exclusively develop iOS apps using the new Swift language Apple debuted last year. This decision did not come lightly. Many conversations, read blog posts and internal pondering if this would be the right move took place before I came to the decision to invest my limited time in learning iOS development.&lt;/p&gt;
+
+&lt;p&gt;After extensive thought on this subject, I’ve dove in head first to learn as fast as I possibly can. My knowledge of web apps and understanding of Object Oriented Programming Languages such as Ruby have been extremely useful in learning Swift concepts. Xcode and the entire development process of iOS is so different, but the more I learn the more my own personal experiences with apps is helping me further my understanding. This is truly an exciting time.&lt;/p&gt;
+
+&lt;p&gt;So, why did I come to this conclusion? My wife originally planted the idea in my head when I first started to learn to code. It was a profound yet simple argument. The vast majority of the time she is on her phone, and the majority of that time is spent in apps, so why don’t you learn how to build these? I’m paraphrasing but when I think about it, it’s also the case for my own behavior. I spend the majority of my time in apps and I’m generally most excited about the possibility of what native apps have the capability of doing.&lt;/p&gt;
+
+&lt;p&gt;At the time I shrugged this off because I was in the infancy of my coding journey and the majority of the resources I found were for the web and Ruby on Rails. Just to be clear, I 100% don’t regret starting with the web. It was essential to understand the fundamental layers of how web frameworks work and this has and will continue to be profound in my iOS development. However, the argument she made began to creep into my mind which became inescapable to my thoughts.&lt;/p&gt;
+
+&lt;p&gt;Now, I could get all &lt;a href=&quot;www.ben-evans.com/&quot;&gt;Benedict Evan’s&lt;/a&gt; and quote statistical data on why mobile is taking over the world or as he explains it “The smartphone is the new sun,” but seriously if you haven’t read his work, you should. I’ll leave him to make the technical arguments to why mobile is the most important piece of hardware in the world and to the future.&lt;/p&gt;
+
+&lt;p&gt;The decision became clear. To build solutions that solved my own problems I needed to develop software on the platform I spend the most time.&lt;/p&gt;
+
+&lt;p&gt;As I was writing about my Ruby on Rails coding journey, I will begin to do that for Swift and iOS development. Writing technical blog posts is to help me better understand the concepts I’m learning and has been enormously helpful. It was the sole reason for taking the part-time work at Codecademy as an Advisor. The experience of helping people to fix a bug or point them on the right path is a blog post in itself and I’ve loved the experience so far. I’ll get to that another time. For now, expect to see this blog full of Swift and iOS development post.&lt;/p&gt;
+
+&lt;p&gt;Happy Coding&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">I started my programming journey almost a year ago and I’ve recently had a change in philosophy. I’ve decided to exclusively develop iOS apps using the new Swift language Apple debuted last year. This decision did not come lightly. Many conversations, read blog posts and internal pondering if this would be the right move took place before I came to the decision to invest my limited time in learning iOS development.</summary></entry><entry><title type="html">Website Redesign in Middleman</title><link href="http://localhost:4000/blog/2015/08/02/Website-Redesign-in-Middleman.html" rel="alternate" type="text/html" title="Website Redesign in Middleman" /><published>2015-08-02T00:00:00-07:00</published><updated>2015-08-02T00:00:00-07:00</updated><id>http://localhost:4000/blog/2015/08/02/Website-Redesign-in-Middleman</id><content type="html" xml:base="http://localhost:4000/blog/2015/08/02/Website-Redesign-in-Middleman.html">&lt;p&gt;If you haven’t noticed but I’ve done an overhaul of my website and blog. I’m not done with making tweaks, honestly I still have a lot to do but I wanted to just ship it and make the changes as I go.&lt;/p&gt;
+
+&lt;p&gt;The site is built on a totally different framework than before. The last site was a blog built with Ruby on Rails. I used my personal blog to test my Rails development skills and it served a useful purpose. It was a simple app that I could maintain to just get into the Rails framework. However, its time has come.&lt;/p&gt;
+
+&lt;p&gt;For a project at work (I’ll get to my new job in a later post) I needed to build a new front end site for the project I’m working on. I’ve conceptually moved away from using Wordpress since I’ve taught myself to code using Ruby on Rails, HTML, CSS, jQuery and the Bootstrap framework. So building a Wordpress site with blog just wasn’t an option for me. I ended up just customizing a Bootstrap theme in pure HTML, CSS and jQuery out of necessity, but I knew this was not sustainable for a larger scale site.&lt;/p&gt;
+
+&lt;p&gt;I found myself coming across Static Site Generators such as Middleman and Jekyll and instantly fell in love with these frameworks. Ok, maybe not in love but I really liked the concept. I realized I didn’t need to build a Rails web app to serve a static site like a marketing site, but the features of Rails such as partials and gems were so appealing. After doing way more research than I would have liked I settled on Middleman, partially because of its connection to Thoughtbot (I’m a big fan).&lt;/p&gt;
+
+&lt;p&gt;I decided that it was time for a change to my personal site and was excited to test out the new framework. Also, I want to have a go-to front end static site generator framework that can serve up my marketing sites with blog for future projects. Did I mention I am serving this site on Github Pages for free? No longer do I need to pay some absurd monthly fee for specialized managed Wordpress host.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I’m not going to get into the finer details of Middleman in this post. For now I’ll say that I’m very happy I’ve made the switch and will certainly be using it for my future projects, plus I probably need to redesign the original work project as it’s continuing to grow in scope and needs a nice framework to develop it efficiently.&lt;/p&gt;
+
+&lt;p&gt;My hiatus from writing regularly is officially over.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">If you haven’t noticed but I’ve done an overhaul of my website and blog. I’m not done with making tweaks, honestly I still have a lot to do but I wanted to just ship it and make the changes as I go.</summary></entry><entry><title type="html">Ruby Basics Intro to RSpec</title><link href="http://localhost:4000/blog/2015/04/13/Ruby-Basics-Intro-to-RSpec.html" rel="alternate" type="text/html" title="Ruby Basics Intro to RSpec" /><published>2015-04-13T00:00:00-07:00</published><updated>2015-04-13T00:00:00-07:00</updated><id>http://localhost:4000/blog/2015/04/13/Ruby-Basics-Intro-to-RSpec</id><content type="html" xml:base="http://localhost:4000/blog/2015/04/13/Ruby-Basics-Intro-to-RSpec.html">&lt;p&gt;The last post I touched on classes and in this tutorial we are going to test that class using RSpec. RSpec is described on its &lt;a href=&quot;http://rspec.info&quot;&gt;website&lt;/a&gt; as a behavior driven development for ruby. I think thats a pretty accurate description but to break it down even further, RSpec is a framework to test your code. It was built as a domain specific language, which means it’s built in Ruby with its own syntax but its still just Ruby code.&lt;/p&gt;
+
+&lt;p&gt;Now the more you learn about Ruby and the Rails framework, you will see the debate in the community about which testing framework is better, RSpec or MiniTest. The best advice I’ve heard on this issue is as long as your testing, then your going in the right direction. I’ve chosen RSpec, but that doesn’t mean you have to.&lt;/p&gt;
+
+&lt;p&gt;Ok, so I’ve expanded the the class of Dog a bit by adding a few methods for playing and resting. To test out my code and practice on your own, create a new file called dog.rb. Tip, you can create a file in your command line like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby touch dog.rb sublime dog.rb&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If your using Sublime thats a shortcut you can set up to have the file automatically open up. Going through the Finder directory is no fun. I used this &lt;a href=&quot;http://olivierlacan.com/posts/launch-sublime-text-3-from-the-command-line/&quot;&gt;walk through&lt;/a&gt; to set it up.&lt;/p&gt;
+
+&lt;p&gt;Write out this code into your dog.rb file. You can copy and paste it but writing out each line is recommended to understand whats going on.&lt;/p&gt;
+
+&lt;p&gt;```ruby class Dog attr_reader :energy, :name def initialize(name, energy=100) @name = name.capitalize @energy = energy end&lt;/p&gt;
+
+&lt;p&gt;def to_s “My dogs name is #{@name} and he has #{@energy} % energy! This dog loves to play!” end&lt;/p&gt;
+
+&lt;p&gt;def play @energy -= 20 puts “#{@name} just ran around the yard! That dog is so fast!” end&lt;/p&gt;
+
+&lt;p&gt;def rest @energy += 25 puts “#{@name} just took a nap. Dogs love to sleep.” end end&lt;/p&gt;
+
+&lt;p&gt;if &lt;strong&gt;FILE&lt;/strong&gt; == $0 dog = Dog.new(“Dexter”, 110) puts dog puts dog.energy puts dog.play puts dog.rest end ```&lt;/p&gt;
+
+&lt;p&gt;Now we want to test this class using RSpec. As of this writing RSpec version is at 3.2. Start in your command line and run:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby gem install rspec&lt;/code&gt; To use RSpec create a new file named dog_spec.rb in the same folder you created dog.rb. The spec portion of the name is what RSpec looks for to run your tests. If you’ve forgotten how to create a file from the command line:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby touch dog_spec.rb sublime dog_spec.rb&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we have our class created and we have a blank file to put our tests in, lets get to it. I’m going to give all the code at once, but its extremely helpful to go line by line adding the code into the file so you know what it does.&lt;/p&gt;
+
+&lt;p&gt;```ruby require_relative ‘dog’&lt;/p&gt;
+
+&lt;p&gt;describe Dog do before do @initial_energy = 100 @dog = Dog.new(“dexter”, @initial_energy) end&lt;/p&gt;
+
+&lt;p&gt;it “has a capitalized name” do expect(@dog.name).to eq(“Dexter”) end&lt;/p&gt;
+
+&lt;p&gt;it “has an initial energy set” do expect(@dog.energy).to eq(100) end&lt;/p&gt;
+
+&lt;p&gt;it “has a string returned for the object” do expect(@dog.to_s).to eq(“My dogs name is Dexter and he has 100 % energy! This dog loves to play!”) end&lt;/p&gt;
+
+&lt;p&gt;it “reduces energy by 20 when a dog plays” do @dog.play expect(@dog.energy).to eq(@initial_energy - 20) end&lt;/p&gt;
+
+&lt;p&gt;it “increases energy by 25 when a dog rests” do @dog.rest expect(@dog.energy).to eq(@initial_energy +25) end&lt;/p&gt;
+
+&lt;p&gt;context “create a dog with default energy” do before do @dog = Dog.new(“dexter”) end&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;
+
+    it &quot;has a default energy of 100&quot; do
+      expect(@dog.energy).to eq(100)
+    end   end end ```
+
+&lt;/div&gt;
+
+&lt;p&gt;The first thing this RSpec file needs to do is require the file we are testing, the dog.rb file. Then on line 3 we start using the basic structure of the testing framework which is supposed to express concepts like a conversation. I translate this first line into “Please describe the Class of Dog doing these things”.&lt;/p&gt;
+
+&lt;p&gt;The block of code that starts on line 4 runs before each testing scenario that starts with “it”. This “before do” basically creates the environment for us to test a specific use case. Instead of typing out this each time we run a scenario it can automatically run for each test case. This conforms to the DRY principle in programming, or Don’t Repeat Yourself.&lt;/p&gt;
+
+&lt;p&gt;Ok, so test scenario 1 is saying a statement of “it has a capitalized name”. One thing I need to say here, please don’t ever call a dog an “it”, that would not be cool! It is referring to the object we are testing and this is the only time where this would be ok. Anyway, keeping the literal translation going I would translate the next line to say “it (the dog) has a capitalized name, do this test, we expect when you call the dog’s name, it will show up as ‘Dexter’ ”. Thats a pretty simple formula to follow, right? The line for “it” states the statement we are trying to test, “expect” is giving the exact parameter we want to see, “.to” wants to see a true value and “eq” is saying the output should equal “Dexter”.&lt;/p&gt;
+
+&lt;p&gt;To actually see this test file run, go back to your command line and you can run any one of the following three commands. Try each one out to see which format you like the best.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby rspec dog_spec.rb rspec dog_spec.rb —color rspec dog_spec.rb —color —format doc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks for following along to my simple introduction to RSpec!&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">The last post I touched on classes and in this tutorial we are going to test that class using RSpec. RSpec is described on its website as a behavior driven development for ruby. I think thats a pretty accurate description but to break it down even further, RSpec is a framework to test your code. It was built as a domain specific language, which means it’s built in Ruby with its own syntax but its still just Ruby code.</summary></entry><entry><title type="html">Ruby Basics Classes, Instance Variables and Initialize</title><link href="http://localhost:4000/blog/2015/04/11/Ruby-Basics-Classes-Instance-Variables-and-Initialize.html" rel="alternate" type="text/html" title="Ruby Basics Classes, Instance Variables and Initialize" /><published>2015-04-11T00:00:00-07:00</published><updated>2015-04-11T00:00:00-07:00</updated><id>http://localhost:4000/blog/2015/04/11/Ruby-Basics-Classes-Instance-Variables-and-Initialize</id><content type="html" xml:base="http://localhost:4000/blog/2015/04/11/Ruby-Basics-Classes-Instance-Variables-and-Initialize.html">&lt;p&gt;I want to quickly touch on 3 concepts that are super important to the Ruby language. Having an understanding how Classes, Instance Variables and the Initialize method work together will be beneficial in mastering the Ruby programming language.&lt;/p&gt;
+
+&lt;p&gt;To give some context of these three concepts lets define one additional term. A Local Variable is only accessible within the method it’s declared in. Meaning we can not call a local variable outside of the method it was created in. Lets look at an example:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby def local_variable x = 19 puts x end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;In this case x is our local variable and can not be called outside of the local_variable method. To use x we would need to call local_variable.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby def to_s “My Local Variable is #{local_variable}” end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ok, now we have established what a local variable is lets see what these other concepts are.&lt;/p&gt;
+
+&lt;h3 id=&quot;classes&quot;&gt;Classes:&lt;/h3&gt;
+
+&lt;p&gt;The Class in Ruby is like a production line that creates objects that have a unique state and a group of methods to call on those objects. The naming convention for classes always start with an uppercase method or known as CamelCase.&lt;/p&gt;
+
+&lt;h3 id=&quot;initialize-method&quot;&gt;Initialize Method:&lt;/h3&gt;
+
+&lt;p&gt;The Initialize Method is part of the Ruby magic. You don’t actually call this method on an object, but Ruby calls it for you every time you use the New method for your class to create a new object. An example is coming.&lt;/p&gt;
+
+&lt;h3 id=&quot;instance-variable&quot;&gt;Instance Variable:&lt;/h3&gt;
+
+&lt;p&gt;This is why we defined what a Local Variable was earlier. An Instance Variable is how we store an object’s state in a Class. These variables can be used throughout the life of your object, but you need to call them differently. These variables start with the @ symbol. You also define your Instance Variables in the Initialize Method.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby class Dog def initialize(name, energy=100) @name = name @energy = energy end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby def to_s “My dogs name is #{@name} and he has #{@energy} % energy! This dog loves to play!” end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So I just created an example class of Dog. When I want to create a new Dog, I would use the new method for the Dog class which will create a state in my instance variables which I defined in the initialize method.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby Dexter = Dog.new(“Dexter”, 110) puts Dexter&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So using that one line of code I created a class object of Dexter who has two instance variables of @name and @health. When I call “puts Dexter”, the output will be “My dogs name is Dexter and he has 110% energy! This dog loves to play!”&lt;/p&gt;
+
+&lt;p&gt;Take this example and try it for yourself in your text editor! &lt;strong&gt;Or go play with a dog that has lots of energy!&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">I want to quickly touch on 3 concepts that are super important to the Ruby language. Having an understanding how Classes, Instance Variables and the Initialize method work together will be beneficial in mastering the Ruby programming language.</summary></entry><entry><title type="html">Ruby Basics Double Quoted Strings</title><link href="http://localhost:4000/blog/2015/04/09/My-Ruby-Basics-Double-Quoted-Strings.html" rel="alternate" type="text/html" title="Ruby Basics Double Quoted Strings" /><published>2015-04-09T00:00:00-07:00</published><updated>2015-04-09T00:00:00-07:00</updated><id>http://localhost:4000/blog/2015/04/09/My-Ruby-Basics-Double-Quoted-Strings</id><content type="html" xml:base="http://localhost:4000/blog/2015/04/09/My-Ruby-Basics-Double-Quoted-Strings.html">&lt;p&gt;For all intensive purposes I only use double quoted strings. I highly recommend taking a look at &lt;a href=&quot;https://github.com/thoughtbot/guides/tree/master/style/ruby&quot;&gt;ThoughtBot’s Ruby Style Guide&lt;/a&gt; which I am echoing here, but lets take a quick at look why we should use double quoted strings.&lt;/p&gt;
+
+&lt;p&gt;Lets say I have two variables:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby name = “Eric” bitcoin = 100&lt;/code&gt; If I have single quoted strings and I want to use both variables I have to use concatenation. Which means using the “+” symbol to add two strings together. Well I can quickly run into errors if I’m not careful.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby puts ‘My name is ‘ + name + ‘and I have ‘ + bitcoin ‘bitcoins.’&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We will get an error message if we run this code. Specifically a TypeError of ‘no implicit conversion of Fixnum into String’. The reason we get this error is the variable, bitcoin = 100, is a fixnum, which is just an integer, and this can’t be called without using the string version. So lets see how this is done correctly.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby puts ‘My name is ‘ + name + ‘and I have ‘ + bitcoin.to_s ‘bitcoins.’&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Not a huge difference but something you have to remember and its more typing. Now lets see this refactored using double quotes. What does refactoring mean? Its the process of altering existing code internally to make it better without altering what that code does external. We will change the code but it will still have the same result.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby puts “My name is #{name} and I have #{bitcoin} bitcoins.”&lt;/code&gt; Using the double quoted strings and using a technique called interpolation, it automatically converts the variable into a string so we can run it without errors. Interpolation just allows Ruby code to appear evaluated within the string.&lt;/p&gt;
+
+&lt;p&gt;If we wanted to say I had double the bitcoins then the hardcoded variable, we could just do:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby puts “My name is #{name} and I have #{bitcoin * 2} bitcoins.”&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Another quick tip if you are writing this code out in your Sublime Text editor (on a Mac) and you want to see if the code will run, just hit command + B. This will run the code right in the text editor without jumping to the command line. You can also test this out in IRB as well. To get to IRB, just hit IRB in the command line and typing out (exit) will get you out.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">For all intensive purposes I only use double quoted strings. I highly recommend taking a look at ThoughtBot’s Ruby Style Guide which I am echoing here, but lets take a quick at look why we should use double quoted strings.</summary></entry></feed>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Ruby Basics Intro to RSpec | erickuhn19</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Ruby Basics Intro to RSpec" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The last post I touched on classes and in this tutorial we are going to test that class using RSpec. RSpec is described on its website as a behavior driven development for ruby. I think thats a pretty accurate description but to break it down even further, RSpec is a framework to test your code. It was built as a domain specific language, which means it’s built in Ruby with its own syntax but its still just Ruby code." />
+<meta property="og:description" content="The last post I touched on classes and in this tutorial we are going to test that class using RSpec. RSpec is described on its website as a behavior driven development for ruby. I think thats a pretty accurate description but to break it down even further, RSpec is a framework to test your code. It was built as a domain specific language, which means it’s built in Ruby with its own syntax but its still just Ruby code." />
+<link rel="canonical" href="http://localhost:4000/blog/2015/04/13/Ruby-Basics-Intro-to-RSpec.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2015/04/13/Ruby-Basics-Intro-to-RSpec.html" />
+<meta property="og:site_name" content="erickuhn19" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-04-13T00:00:00-07:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2015/04/13/Ruby-Basics-Intro-to-RSpec.html"},"url":"http://localhost:4000/blog/2015/04/13/Ruby-Basics-Intro-to-RSpec.html","headline":"Ruby Basics Intro to RSpec","dateModified":"2015-04-13T00:00:00-07:00","datePublished":"2015-04-13T00:00:00-07:00","description":"The last post I touched on classes and in this tutorial we are going to test that class using RSpec. RSpec is described on its website as a behavior driven development for ruby. I think thats a pretty accurate description but to break it down even further, RSpec is a framework to test your code. It was built as a domain specific language, which means it’s built in Ruby with its own syntax but its still just Ruby code.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="erickuhn19" /><script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+  <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+  <img src="/assets/images/bitcoin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  erickuhn19
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/satoshi">Satoshi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/bitcoinbooks">Bitcoin Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+  </div>
+</nav>
+<div class="py-5">
+      <div class="container page-content">
+          <article>
+
+  <header>
+    <h1>Ruby Basics Intro to RSpec</h1>
+    <p class="text-muted">
+      <time datetime="2015-04-13T00:00:00-07:00">Apr 13, 2015
+      </time></p>
+  </header>
+
+  <section>
+    <p>The last post I touched on classes and in this tutorial we are going to test that class using RSpec. RSpec is described on its <a href="http://rspec.info">website</a> as a behavior driven development for ruby. I think thats a pretty accurate description but to break it down even further, RSpec is a framework to test your code. It was built as a domain specific language, which means it’s built in Ruby with its own syntax but its still just Ruby code.</p>
+
+<p>Now the more you learn about Ruby and the Rails framework, you will see the debate in the community about which testing framework is better, RSpec or MiniTest. The best advice I’ve heard on this issue is as long as your testing, then your going in the right direction. I’ve chosen RSpec, but that doesn’t mean you have to.</p>
+
+<p>Ok, so I’ve expanded the the class of Dog a bit by adding a few methods for playing and resting. To test out my code and practice on your own, create a new file called dog.rb. Tip, you can create a file in your command line like this.</p>
+
+<p><code class="highlighter-rouge">ruby touch dog.rb sublime dog.rb</code></p>
+
+<p>If your using Sublime thats a shortcut you can set up to have the file automatically open up. Going through the Finder directory is no fun. I used this <a href="http://olivierlacan.com/posts/launch-sublime-text-3-from-the-command-line/">walk through</a> to set it up.</p>
+
+<p>Write out this code into your dog.rb file. You can copy and paste it but writing out each line is recommended to understand whats going on.</p>
+
+<p>```ruby class Dog attr_reader :energy, :name def initialize(name, energy=100) @name = name.capitalize @energy = energy end</p>
+
+<p>def to_s “My dogs name is #{@name} and he has #{@energy} % energy! This dog loves to play!” end</p>
+
+<p>def play @energy -= 20 puts “#{@name} just ran around the yard! That dog is so fast!” end</p>
+
+<p>def rest @energy += 25 puts “#{@name} just took a nap. Dogs love to sleep.” end end</p>
+
+<p>if <strong>FILE</strong> == $0 dog = Dog.new(“Dexter”, 110) puts dog puts dog.energy puts dog.play puts dog.rest end ```</p>
+
+<p>Now we want to test this class using RSpec. As of this writing RSpec version is at 3.2. Start in your command line and run:</p>
+
+<p><code class="highlighter-rouge">ruby gem install rspec</code> To use RSpec create a new file named dog_spec.rb in the same folder you created dog.rb. The spec portion of the name is what RSpec looks for to run your tests. If you’ve forgotten how to create a file from the command line:</p>
+
+<p><code class="highlighter-rouge">ruby touch dog_spec.rb sublime dog_spec.rb</code></p>
+
+<p>Now we have our class created and we have a blank file to put our tests in, lets get to it. I’m going to give all the code at once, but its extremely helpful to go line by line adding the code into the file so you know what it does.</p>
+
+<p>```ruby require_relative ‘dog’</p>
+
+<p>describe Dog do before do @initial_energy = 100 @dog = Dog.new(“dexter”, @initial_energy) end</p>
+
+<p>it “has a capitalized name” do expect(@dog.name).to eq(“Dexter”) end</p>
+
+<p>it “has an initial energy set” do expect(@dog.energy).to eq(100) end</p>
+
+<p>it “has a string returned for the object” do expect(@dog.to_s).to eq(“My dogs name is Dexter and he has 100 % energy! This dog loves to play!”) end</p>
+
+<p>it “reduces energy by 20 when a dog plays” do @dog.play expect(@dog.energy).to eq(@initial_energy - 20) end</p>
+
+<p>it “increases energy by 25 when a dog rests” do @dog.rest expect(@dog.energy).to eq(@initial_energy +25) end</p>
+
+<p>context “create a dog with default energy” do before do @dog = Dog.new(“dexter”) end</p>
+
+<div class="highlight">
+
+    it "has a default energy of 100" do
+      expect(@dog.energy).to eq(100)
+    end   end end ```
+
+</div>
+
+<p>The first thing this RSpec file needs to do is require the file we are testing, the dog.rb file. Then on line 3 we start using the basic structure of the testing framework which is supposed to express concepts like a conversation. I translate this first line into “Please describe the Class of Dog doing these things”.</p>
+
+<p>The block of code that starts on line 4 runs before each testing scenario that starts with “it”. This “before do” basically creates the environment for us to test a specific use case. Instead of typing out this each time we run a scenario it can automatically run for each test case. This conforms to the DRY principle in programming, or Don’t Repeat Yourself.</p>
+
+<p>Ok, so test scenario 1 is saying a statement of “it has a capitalized name”. One thing I need to say here, please don’t ever call a dog an “it”, that would not be cool! It is referring to the object we are testing and this is the only time where this would be ok. Anyway, keeping the literal translation going I would translate the next line to say “it (the dog) has a capitalized name, do this test, we expect when you call the dog’s name, it will show up as ‘Dexter’ ”. Thats a pretty simple formula to follow, right? The line for “it” states the statement we are trying to test, “expect” is giving the exact parameter we want to see, “.to” wants to see a true value and “eq” is saying the output should equal “Dexter”.</p>
+
+<p>To actually see this test file run, go back to your command line and you can run any one of the following three commands. Try each one out to see which format you like the best.</p>
+
+<p><code class="highlighter-rouge">ruby rspec dog_spec.rb rspec dog_spec.rb —color rspec dog_spec.rb —color —format doc</code></p>
+
+<p>Thanks for following along to my simple introduction to RSpec!</p>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+</article>
+
+      </div>
+    </div><footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Made by <a href="https://twitter.com/erickuhn19">@erickuhn19</a></p>
+  </div>
+</footer>
+</body>
+
+</html>

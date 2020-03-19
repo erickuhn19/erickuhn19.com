@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Website Redesign in Middleman | erickuhn19</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Website Redesign in Middleman" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="If you haven’t noticed but I’ve done an overhaul of my website and blog. I’m not done with making tweaks, honestly I still have a lot to do but I wanted to just ship it and make the changes as I go." />
+<meta property="og:description" content="If you haven’t noticed but I’ve done an overhaul of my website and blog. I’m not done with making tweaks, honestly I still have a lot to do but I wanted to just ship it and make the changes as I go." />
+<link rel="canonical" href="http://localhost:4000/blog/2015/08/02/Website-Redesign-in-Middleman.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2015/08/02/Website-Redesign-in-Middleman.html" />
+<meta property="og:site_name" content="erickuhn19" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-08-02T00:00:00-07:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2015/08/02/Website-Redesign-in-Middleman.html"},"url":"http://localhost:4000/blog/2015/08/02/Website-Redesign-in-Middleman.html","headline":"Website Redesign in Middleman","dateModified":"2015-08-02T00:00:00-07:00","datePublished":"2015-08-02T00:00:00-07:00","description":"If you haven’t noticed but I’ve done an overhaul of my website and blog. I’m not done with making tweaks, honestly I still have a lot to do but I wanted to just ship it and make the changes as I go.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="erickuhn19" /><script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+  <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+  <img src="/assets/images/bitcoin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  erickuhn19
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/satoshi">Satoshi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/bitcoinbooks">Bitcoin Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+  </div>
+</nav>
+<div class="py-5">
+      <div class="container page-content">
+          <article>
+
+  <header>
+    <h1>Website Redesign in Middleman</h1>
+    <p class="text-muted">
+      <time datetime="2015-08-02T00:00:00-07:00">Aug 2, 2015
+      </time></p>
+  </header>
+
+  <section>
+    <p>If you haven’t noticed but I’ve done an overhaul of my website and blog. I’m not done with making tweaks, honestly I still have a lot to do but I wanted to just ship it and make the changes as I go.</p>
+
+<p>The site is built on a totally different framework than before. The last site was a blog built with Ruby on Rails. I used my personal blog to test my Rails development skills and it served a useful purpose. It was a simple app that I could maintain to just get into the Rails framework. However, its time has come.</p>
+
+<p>For a project at work (I’ll get to my new job in a later post) I needed to build a new front end site for the project I’m working on. I’ve conceptually moved away from using Wordpress since I’ve taught myself to code using Ruby on Rails, HTML, CSS, jQuery and the Bootstrap framework. So building a Wordpress site with blog just wasn’t an option for me. I ended up just customizing a Bootstrap theme in pure HTML, CSS and jQuery out of necessity, but I knew this was not sustainable for a larger scale site.</p>
+
+<p>I found myself coming across Static Site Generators such as Middleman and Jekyll and instantly fell in love with these frameworks. Ok, maybe not in love but I really liked the concept. I realized I didn’t need to build a Rails web app to serve a static site like a marketing site, but the features of Rails such as partials and gems were so appealing. After doing way more research than I would have liked I settled on Middleman, partially because of its connection to Thoughtbot (I’m a big fan).</p>
+
+<p>I decided that it was time for a change to my personal site and was excited to test out the new framework. Also, I want to have a go-to front end static site generator framework that can serve up my marketing sites with blog for future projects. Did I mention I am serving this site on Github Pages for free? No longer do I need to pay some absurd monthly fee for specialized managed Wordpress host.</p>
+
+<p>Anyway, I’m not going to get into the finer details of Middleman in this post. For now I’ll say that I’m very happy I’ve made the switch and will certainly be using it for my future projects, plus I probably need to redesign the original work project as it’s continuing to grow in scope and needs a nice framework to develop it efficiently.</p>
+
+<p>My hiatus from writing regularly is officially over.</p>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+</article>
+
+      </div>
+    </div><footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Made by <a href="https://twitter.com/erickuhn19">@erickuhn19</a></p>
+  </div>
+</footer>
+</body>
+
+</html>

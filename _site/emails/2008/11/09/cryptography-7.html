@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Bitcoin P2P e-cash paper | erickuhn19</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Bitcoin P2P e-cash paper" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Source - Nakamoto Institute" />
+<meta property="og:description" content="Source - Nakamoto Institute" />
+<link rel="canonical" href="http://localhost:4000/emails/2008/11/09/cryptography-7.html" />
+<meta property="og:url" content="http://localhost:4000/emails/2008/11/09/cryptography-7.html" />
+<meta property="og:site_name" content="erickuhn19" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2008-11-09T00:00:00-08:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/emails/2008/11/09/cryptography-7.html"},"url":"http://localhost:4000/emails/2008/11/09/cryptography-7.html","headline":"Bitcoin P2P e-cash paper","dateModified":"2008-11-09T00:00:00-08:00","datePublished":"2008-11-09T00:00:00-08:00","description":"Source - Nakamoto Institute","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="erickuhn19" /><script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+  <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+  <img src="/assets/images/bitcoin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  erickuhn19
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/satoshi">Satoshi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/bitcoinbooks">Bitcoin Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+  </div>
+</nav>
+<div class="py-5">
+      <div class="container page-content">
+          <article>
+
+  <header>
+    <h1>Bitcoin P2P e-cash paper</h1>
+    <p class="text-muted">
+      <time datetime="2008-11-09T00:00:00-08:00">Nov 9, 2008
+      </time></p>
+  </header>
+
+  <section>
+    <p><a href="http://www.metzdowd.com/pipermail/cryptography/2008-November/014833.html">Source</a> - <a href="https://satoshi.nakamotoinstitute.org/emails/cryptography/7/">Nakamoto Institute</a></p>
+
+<p><a href="/satoshi/emails">Email Index</a> - <a href="/emails/2008/11/09/cryptography-6">Back</a> - <a href="/emails/2008/11/09/cryptography-8">Next</a></p>
+
+<p><em>&gt;James A. Donald wrote:</em></p>
+<blockquote>
+
+  <p><em>&gt; The core concept is that lots of entities keep complete and consistent information as to who owns which bitcoins.</em></p>
+
+  <p><em>&gt; But maintaining consistency is tricky. It is not clear to me what happens when someone reports one transaction to one maintainer, and someone else transports another transaction to another maintainer. The transaction cannot be known to be valid until it has been incorporated into a globally shared view of all past transactions, and no one can know that a globally shared view of all past transactions is globally shared until after some time has passed, and after many new transactions have arrived.</em></p>
+
+  <p><em>&gt; Did you explain how to do this, and it just passed over my head, or were you confident it could be done, and a bit vague as to the details?</em></p>
+</blockquote>
+
+<hr />
+
+<p>The proof-of-work chain is the solution to the synchronisation problem, and to knowing what the globally shared view is without having to trust anyone.</p>
+
+<p>A transaction will quickly propagate throughout the network, so if two versions of the same transaction were reported at close to the same time, the one with the head start would have a big advantage in reaching many more nodes first. Nodes will only accept the first one they see, refusing the second one to arrive, so the earlier transaction would have many more nodes working on incorporating it into the next proof-of-work. In effect, each node votes for its viewpoint of which transaction it saw first by including it in its proof-of-work effort.</p>
+
+<p>If the transactions did come at exactly the same time and there was an even split, it’s a toss up based on which gets into a proof-of-work first, and that decides which is valid.</p>
+
+<p>When a node finds a proof-of-work, the new block is propagated throughout the network and everyone adds it to the chain and starts working on the next block after it. Any nodes that had the other transaction will stop trying to include it in a block, since it’s now invalid according to the accepted chain.</p>
+
+<p>The proof-of-work chain is itself self-evident proof that it came from the globally shared view. Only the majority of the network together has enough CPU power to generate such a difficult chain of proof-of-work. Any user, upon receiving the proof-of-work chain, can see what the majority of the network has approved. Once a transaction is hashed into a link that’s a few links back in the chain, it is firmly etched into the global history.</p>
+
+<p>Satoshi Nakamoto</p>
+
+<hr />
+<p>The Cryptography Mailing List
+Unsubscribe by sending “unsubscribe cryptography” to majordomo at metzdowd.com</p>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+</article>
+
+      </div>
+    </div><footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Made by <a href="https://twitter.com/erickuhn19">@erickuhn19</a></p>
+  </div>
+</footer>
+</body>
+
+</html>

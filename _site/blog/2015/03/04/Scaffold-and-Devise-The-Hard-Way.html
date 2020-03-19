@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Scaffold and Devise - The Hard Way | erickuhn19</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Scaffold and Devise - The Hard Way" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I recently read this article called Rails Scaffold’s Dangerous Defaults." />
+<meta property="og:description" content="I recently read this article called Rails Scaffold’s Dangerous Defaults." />
+<link rel="canonical" href="http://localhost:4000/blog/2015/03/04/Scaffold-and-Devise-The-Hard-Way.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2015/03/04/Scaffold-and-Devise-The-Hard-Way.html" />
+<meta property="og:site_name" content="erickuhn19" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-03-04T00:00:00-08:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2015/03/04/Scaffold-and-Devise-The-Hard-Way.html"},"url":"http://localhost:4000/blog/2015/03/04/Scaffold-and-Devise-The-Hard-Way.html","headline":"Scaffold and Devise - The Hard Way","dateModified":"2015-03-04T00:00:00-08:00","datePublished":"2015-03-04T00:00:00-08:00","description":"I recently read this article called Rails Scaffold’s Dangerous Defaults.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="erickuhn19" /><script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+  <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+  <img src="/assets/images/bitcoin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  erickuhn19
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/satoshi">Satoshi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/bitcoinbooks">Bitcoin Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+  </div>
+</nav>
+<div class="py-5">
+      <div class="container page-content">
+          <article>
+
+  <header>
+    <h1>Scaffold and Devise - The Hard Way</h1>
+    <p class="text-muted">
+      <time datetime="2015-03-04T00:00:00-08:00">Mar 4, 2015
+      </time></p>
+  </header>
+
+  <section>
+    <p>I recently read this article called <a href="http://rubyjunky.com/rails-scaffold-dangerous-defaults.html?utm_medium=email&amp;utm_source=rubyweekly">Rails Scaffold’s Dangerous Defaults</a>.</p>
+
+<p>As a new Rails programmer I really like generating scaffolds because its so robust in nature. It creates views, controller, applies resources to the routes, stylesheets, JSON Api and even writes some basic tests! I found out pretty quickly that I don’t actually use all the functionality the scaffold gives me, but at the time I wasn’t worried about it.</p>
+
+<p>After reading this article I have some really great insight I look forward to implementing in my next project. Instead of relying on a scaffold, even if I believe I will use most if not all of it, is to create a secondary app while in development of my main app. Run a scaffold on the secondary app and pick and choose what pieces I want to implement for my main app. This gives me the ability to analyze what the scaffold is doing and decide what pieces are essential to what I’ trying to do.</p>
+
+<p>The author ends the article with these words:</p>
+
+<blockquote>
+  <p>In the end, you shouldn’t put too much trust in code you haven’t written yourself. Many bugs and security holes occur in the areas of our applications that we understand the least.</p>
+</blockquote>
+
+<p>This reminds me of my recent revelation with using Devise for authentication. In the early stages of learning to program, you need to do things the hard way to really understand them. Devise brings a ton of functionality but you might not need all of it. Trying to go under the hood and customize things gets tricky if you really don’t understand how it works.</p>
+
+<p>I’m going to focus on doing things the hard way.</p>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+</article>
+
+      </div>
+    </div><footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Made by <a href="https://twitter.com/erickuhn19">@erickuhn19</a></p>
+  </div>
+</footer>
+</body>
+
+</html>

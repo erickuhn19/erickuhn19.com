@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Ruby Basics Double Quoted Strings | erickuhn19</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Ruby Basics Double Quoted Strings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="For all intensive purposes I only use double quoted strings. I highly recommend taking a look at ThoughtBot’s Ruby Style Guide which I am echoing here, but lets take a quick at look why we should use double quoted strings." />
+<meta property="og:description" content="For all intensive purposes I only use double quoted strings. I highly recommend taking a look at ThoughtBot’s Ruby Style Guide which I am echoing here, but lets take a quick at look why we should use double quoted strings." />
+<link rel="canonical" href="http://localhost:4000/blog/2015/04/09/My-Ruby-Basics-Double-Quoted-Strings.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2015/04/09/My-Ruby-Basics-Double-Quoted-Strings.html" />
+<meta property="og:site_name" content="erickuhn19" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-04-09T00:00:00-07:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2015/04/09/My-Ruby-Basics-Double-Quoted-Strings.html"},"url":"http://localhost:4000/blog/2015/04/09/My-Ruby-Basics-Double-Quoted-Strings.html","headline":"Ruby Basics Double Quoted Strings","dateModified":"2015-04-09T00:00:00-07:00","datePublished":"2015-04-09T00:00:00-07:00","description":"For all intensive purposes I only use double quoted strings. I highly recommend taking a look at ThoughtBot’s Ruby Style Guide which I am echoing here, but lets take a quick at look why we should use double quoted strings.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="erickuhn19" /><script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+  <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+  <img src="/assets/images/bitcoin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  erickuhn19
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/satoshi">Satoshi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/bitcoinbooks">Bitcoin Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+  </div>
+</nav>
+<div class="py-5">
+      <div class="container page-content">
+          <article>
+
+  <header>
+    <h1>Ruby Basics Double Quoted Strings</h1>
+    <p class="text-muted">
+      <time datetime="2015-04-09T00:00:00-07:00">Apr 9, 2015
+      </time></p>
+  </header>
+
+  <section>
+    <p>For all intensive purposes I only use double quoted strings. I highly recommend taking a look at <a href="https://github.com/thoughtbot/guides/tree/master/style/ruby">ThoughtBot’s Ruby Style Guide</a> which I am echoing here, but lets take a quick at look why we should use double quoted strings.</p>
+
+<p>Lets say I have two variables:</p>
+
+<p><code class="highlighter-rouge">ruby name = “Eric” bitcoin = 100</code> If I have single quoted strings and I want to use both variables I have to use concatenation. Which means using the “+” symbol to add two strings together. Well I can quickly run into errors if I’m not careful.</p>
+
+<p><code class="highlighter-rouge">ruby puts ‘My name is ‘ + name + ‘and I have ‘ + bitcoin ‘bitcoins.’</code></p>
+
+<p>We will get an error message if we run this code. Specifically a TypeError of ‘no implicit conversion of Fixnum into String’. The reason we get this error is the variable, bitcoin = 100, is a fixnum, which is just an integer, and this can’t be called without using the string version. So lets see how this is done correctly.</p>
+
+<p><code class="highlighter-rouge">ruby puts ‘My name is ‘ + name + ‘and I have ‘ + bitcoin.to_s ‘bitcoins.’</code></p>
+
+<p>Not a huge difference but something you have to remember and its more typing. Now lets see this refactored using double quotes. What does refactoring mean? Its the process of altering existing code internally to make it better without altering what that code does external. We will change the code but it will still have the same result.</p>
+
+<p><code class="highlighter-rouge">ruby puts “My name is #{name} and I have #{bitcoin} bitcoins.”</code> Using the double quoted strings and using a technique called interpolation, it automatically converts the variable into a string so we can run it without errors. Interpolation just allows Ruby code to appear evaluated within the string.</p>
+
+<p>If we wanted to say I had double the bitcoins then the hardcoded variable, we could just do:</p>
+
+<p><code class="highlighter-rouge">ruby puts “My name is #{name} and I have #{bitcoin * 2} bitcoins.”</code></p>
+
+<p>Another quick tip if you are writing this code out in your Sublime Text editor (on a Mac) and you want to see if the code will run, just hit command + B. This will run the code right in the text editor without jumping to the command line. You can also test this out in IRB as well. To get to IRB, just hit IRB in the command line and typing out (exit) will get you out.</p>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+</article>
+
+      </div>
+    </div><footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Made by <a href="https://twitter.com/erickuhn19">@erickuhn19</a></p>
+  </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>My First Open Source Project rails blogger engine | erickuhn19</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="My First Open Source Project rails blogger engine" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In the final weeks of Codecademy Labs we had to break off into teams, and choose a final project that will be presented on the last day. My mind instantly raced about what project I would choose. We only had two weeks to complete the project and this is a part time course. Did I want to build one of my pet projects I’ve been planning? Not really, I didn’t want to rush one of those. Maybe I could just think of some small idea and hack it together with a team in two weeks, only to never use it again. That didn’t sound like a good idea either. Then I thought it would be really cool to start some open source project and then be able to continue working on it after the class ended. Create something that not only would be an interesting final project but something real people could use. And maybe other people in the class would eventually contribute to it." />
+<meta property="og:description" content="In the final weeks of Codecademy Labs we had to break off into teams, and choose a final project that will be presented on the last day. My mind instantly raced about what project I would choose. We only had two weeks to complete the project and this is a part time course. Did I want to build one of my pet projects I’ve been planning? Not really, I didn’t want to rush one of those. Maybe I could just think of some small idea and hack it together with a team in two weeks, only to never use it again. That didn’t sound like a good idea either. Then I thought it would be really cool to start some open source project and then be able to continue working on it after the class ended. Create something that not only would be an interesting final project but something real people could use. And maybe other people in the class would eventually contribute to it." />
+<link rel="canonical" href="http://localhost:4000/blog/2015/04/04/My-First-Open-Source-Project-rails-blogger-engine.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2015/04/04/My-First-Open-Source-Project-rails-blogger-engine.html" />
+<meta property="og:site_name" content="erickuhn19" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-04-04T00:00:00-07:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2015/04/04/My-First-Open-Source-Project-rails-blogger-engine.html"},"url":"http://localhost:4000/blog/2015/04/04/My-First-Open-Source-Project-rails-blogger-engine.html","headline":"My First Open Source Project rails blogger engine","dateModified":"2015-04-04T00:00:00-07:00","datePublished":"2015-04-04T00:00:00-07:00","description":"In the final weeks of Codecademy Labs we had to break off into teams, and choose a final project that will be presented on the last day. My mind instantly raced about what project I would choose. We only had two weeks to complete the project and this is a part time course. Did I want to build one of my pet projects I’ve been planning? Not really, I didn’t want to rush one of those. Maybe I could just think of some small idea and hack it together with a team in two weeks, only to never use it again. That didn’t sound like a good idea either. Then I thought it would be really cool to start some open source project and then be able to continue working on it after the class ended. Create something that not only would be an interesting final project but something real people could use. And maybe other people in the class would eventually contribute to it.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="erickuhn19" /><script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+  <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+  <img src="/assets/images/bitcoin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  erickuhn19
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/satoshi">Satoshi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/bitcoinbooks">Bitcoin Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+  </div>
+</nav>
+<div class="py-5">
+      <div class="container page-content">
+          <article>
+
+  <header>
+    <h1>My First Open Source Project rails blogger engine</h1>
+    <p class="text-muted">
+      <time datetime="2015-04-04T00:00:00-07:00">Apr 4, 2015
+      </time></p>
+  </header>
+
+  <section>
+    <p>In the final weeks of Codecademy Labs we had to break off into teams, and choose a final project that will be presented on the last day. My mind instantly raced about what project I would choose. We only had two weeks to complete the project and this is a part time course. Did I want to build one of my pet projects I’ve been planning? Not really, I didn’t want to rush one of those. Maybe I could just think of some small idea and hack it together with a team in two weeks, only to never use it again. That didn’t sound like a good idea either. Then I thought it would be really cool to start some open source project and then be able to continue working on it after the class ended. Create something that not only would be an interesting final project but something real people could use. And maybe other people in the class would eventually contribute to it.</p>
+
+<p>So me and my teammate, <a href="https://github.com/meghart">Meg</a>, started working on the idea. At first, we wanted to build a super simple authentication gem that could be used instead of Devise for personal blogs created in Rails (like this site). We started going through the tedious trial and error process to build a gem. Can I be honest here? I think gem building is probably the weakest area of documentation. OK, I just had to say it. Anyway, so there is multiple ways to build a gem. You can use bundler, you can create a plugin or you can make a mountable engine.</p>
+
+<p>After we had a good sense on how the different types of gems were made, we began asking ourselves what we were trying to accomplish? A simple authentication gem for a rails blog! Does that mean the only thing the rails app has is a blog or is this just a piece of a bigger rails app? We wanted this gem to have a future and a future where I would want to use this in future applications. We needed to think bigger.</p>
+
+<p>We ultimately decided to build a blogging gem for Rails that encompasses all of the pieces needed to just bolt on a blog to your rails app. Its called <a href="https://rubygems.org/gems/rails_blogger_engine/">Rails_Blogger_Engine</a>. That eventually includes our original idea of simple authentication. We didn’t get there in the gem’s 1.0 release for the project, but its definitely included in the projects roadmap.</p>
+
+<p>If you’re reading this and want to contribute to an open source project. Check out the features we think would be cool to add to this project. If you have your own ideas then just <a href="https://github.com/erickuhn19/rails_blogger_engine">submit a pull request</a> and we’ll see if it works.</p>
+
+<h3 id="feature-list">Feature List</h3>
+
+<ul>
+  <li>Initializers to push views &amp; controllers to app</li>
+  <li>Bootstrap template</li>
+  <li>Markdown with syntax highlighting</li>
+  <li>Simple authentication (Create admins on the rails console, no views for creating users)</li>
+  <li>Google ReCaptcha for comment spam</li>
+  <li>Comment form by clicking button through jQuery</li>
+  <li>URL’s created through title of post</li>
+  <li>SEO</li>
+  <li>Pagination</li>
+  <li>Tests!</li>
+</ul>
+
+<p>Anything else that you can think of!</p>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+</article>
+
+      </div>
+    </div><footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Made by <a href="https://twitter.com/erickuhn19">@erickuhn19</a></p>
+  </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Ruby Basics Classes, Instance Variables and Initialize | erickuhn19</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Ruby Basics Classes, Instance Variables and Initialize" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I want to quickly touch on 3 concepts that are super important to the Ruby language. Having an understanding how Classes, Instance Variables and the Initialize method work together will be beneficial in mastering the Ruby programming language." />
+<meta property="og:description" content="I want to quickly touch on 3 concepts that are super important to the Ruby language. Having an understanding how Classes, Instance Variables and the Initialize method work together will be beneficial in mastering the Ruby programming language." />
+<link rel="canonical" href="http://localhost:4000/blog/2015/04/11/Ruby-Basics-Classes-Instance-Variables-and-Initialize.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2015/04/11/Ruby-Basics-Classes-Instance-Variables-and-Initialize.html" />
+<meta property="og:site_name" content="erickuhn19" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-04-11T00:00:00-07:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2015/04/11/Ruby-Basics-Classes-Instance-Variables-and-Initialize.html"},"url":"http://localhost:4000/blog/2015/04/11/Ruby-Basics-Classes-Instance-Variables-and-Initialize.html","headline":"Ruby Basics Classes, Instance Variables and Initialize","dateModified":"2015-04-11T00:00:00-07:00","datePublished":"2015-04-11T00:00:00-07:00","description":"I want to quickly touch on 3 concepts that are super important to the Ruby language. Having an understanding how Classes, Instance Variables and the Initialize method work together will be beneficial in mastering the Ruby programming language.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="erickuhn19" /><script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+  <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+  <img src="/assets/images/bitcoin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  erickuhn19
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/satoshi">Satoshi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/bitcoinbooks">Bitcoin Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+  </div>
+</nav>
+<div class="py-5">
+      <div class="container page-content">
+          <article>
+
+  <header>
+    <h1>Ruby Basics Classes, Instance Variables and Initialize</h1>
+    <p class="text-muted">
+      <time datetime="2015-04-11T00:00:00-07:00">Apr 11, 2015
+      </time></p>
+  </header>
+
+  <section>
+    <p>I want to quickly touch on 3 concepts that are super important to the Ruby language. Having an understanding how Classes, Instance Variables and the Initialize method work together will be beneficial in mastering the Ruby programming language.</p>
+
+<p>To give some context of these three concepts lets define one additional term. A Local Variable is only accessible within the method it’s declared in. Meaning we can not call a local variable outside of the method it was created in. Lets look at an example:</p>
+
+<p><code class="highlighter-rouge">ruby def local_variable x = 19 puts x end</code></p>
+
+<p>In this case x is our local variable and can not be called outside of the local_variable method. To use x we would need to call local_variable.</p>
+
+<p><code class="highlighter-rouge">ruby def to_s “My Local Variable is #{local_variable}” end</code></p>
+
+<p>Ok, now we have established what a local variable is lets see what these other concepts are.</p>
+
+<h3 id="classes">Classes:</h3>
+
+<p>The Class in Ruby is like a production line that creates objects that have a unique state and a group of methods to call on those objects. The naming convention for classes always start with an uppercase method or known as CamelCase.</p>
+
+<h3 id="initialize-method">Initialize Method:</h3>
+
+<p>The Initialize Method is part of the Ruby magic. You don’t actually call this method on an object, but Ruby calls it for you every time you use the New method for your class to create a new object. An example is coming.</p>
+
+<h3 id="instance-variable">Instance Variable:</h3>
+
+<p>This is why we defined what a Local Variable was earlier. An Instance Variable is how we store an object’s state in a Class. These variables can be used throughout the life of your object, but you need to call them differently. These variables start with the @ symbol. You also define your Instance Variables in the Initialize Method.</p>
+
+<p><code class="highlighter-rouge">ruby class Dog def initialize(name, energy=100) @name = name @energy = energy end</code></p>
+
+<p><code class="highlighter-rouge">ruby def to_s “My dogs name is #{@name} and he has #{@energy} % energy! This dog loves to play!” end</code></p>
+
+<p>So I just created an example class of Dog. When I want to create a new Dog, I would use the new method for the Dog class which will create a state in my instance variables which I defined in the initialize method.</p>
+
+<p><code class="highlighter-rouge">ruby Dexter = Dog.new(“Dexter”, 110) puts Dexter</code></p>
+
+<p>So using that one line of code I created a class object of Dexter who has two instance variables of @name and @health. When I call “puts Dexter”, the output will be “My dogs name is Dexter and he has 110% energy! This dog loves to play!”</p>
+
+<p>Take this example and try it for yourself in your text editor! <strong>Or go play with a dog that has lots of energy!</strong></p>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#substack">
+  Subscribe
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="substack" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe</h4>
+      </div>
+      <div class="modal-body">
+        <iframe width="480" height="320" src="https://erickuhn19.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+</article>
+
+      </div>
+    </div><footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Made by <a href="https://twitter.com/erickuhn19">@erickuhn19</a></p>
+  </div>
+</footer>
+</body>
+
+</html>
