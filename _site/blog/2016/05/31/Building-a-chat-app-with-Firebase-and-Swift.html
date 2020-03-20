@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Building a chat app with Firebase and Swift | erickuhn19</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Building a chat app with Firebase and Swift" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="So in my last post on Google I/O I mentioned I was going to explore Firebase and I’ve been doing just that. The Firebase team has great documentation on their site as well as some helpful tutorials. I completed the iOS building a messaging app with Swift. You can find the link here." />
+<meta property="og:description" content="So in my last post on Google I/O I mentioned I was going to explore Firebase and I’ve been doing just that. The Firebase team has great documentation on their site as well as some helpful tutorials. I completed the iOS building a messaging app with Swift. You can find the link here." />
+<link rel="canonical" href="http://localhost:4000/blog/2016/05/31/Building-a-chat-app-with-Firebase-and-Swift.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2016/05/31/Building-a-chat-app-with-Firebase-and-Swift.html" />
+<meta property="og:site_name" content="erickuhn19" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-05-31T00:00:00-07:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2016/05/31/Building-a-chat-app-with-Firebase-and-Swift.html"},"url":"http://localhost:4000/blog/2016/05/31/Building-a-chat-app-with-Firebase-and-Swift.html","headline":"Building a chat app with Firebase and Swift","dateModified":"2016-05-31T00:00:00-07:00","datePublished":"2016-05-31T00:00:00-07:00","description":"So in my last post on Google I/O I mentioned I was going to explore Firebase and I’ve been doing just that. The Firebase team has great documentation on their site as well as some helpful tutorials. I completed the iOS building a messaging app with Swift. You can find the link here.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="erickuhn19" /><script src="/assets/javascript/bootstrap/jquery.min.js"></script>
+  <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+  <img src="/assets/images/bitcoin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  erickuhn19
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/satoshi/bitcoin-whitepaper">Satoshi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/bitcoinbooks">Bitcoin Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="py-5">
+      <div class="container page-content">
+          <article>
+
+  <header>
+    <h1>Building a chat app with Firebase and Swift</h1>
+    <p class="text-muted">
+      <time datetime="2016-05-31T00:00:00-07:00">May 31, 2016
+      </time></p>
+  </header>
+
+  <section>
+    <p>So in my <a href="http://erickuhn19.com/google-io-2016-thoughts/">last post on Google I/O</a> I mentioned I was going to explore Firebase and I’ve been doing just that. The Firebase team has great documentation on their site as well as some helpful tutorials. I completed the iOS building a messaging app with Swift. You can find the link <a href="https://codelabs.developers.google.com/codelabs/firebase-ios-swift">here.</a></p>
+
+<p>It was very cool to see the power behind the SDK and how Firebase can augment so many backend things you would have to build into your API. I followed along but getting to understand all the functions is really where you can unlock Firebase’s true potential. I plan on doing this over the next few weeks.</p>
+
+<p>In the tutorial you learn how to set up the following:</p>
+
+<ul>
+  <li>Sync data using the Firebase Realtime Database.</li>
+  <li>Manage Identity and Sign In with Firebase Authentication</li>
+  <li>Store and access files using Firebase Storage.</li>
+  <li>Configure an application with Firebase Remote Config.</li>
+  <li>Track application usage flows with Firebase Analytics.</li>
+  <li>Display ads with AdMob.</li>
+</ul>
+
+<p>However, there were a few issues with the documentation. Nothing a little stackoverflow/github googling couldn’t fix. Here are the fixes:</p>
+
+<p>Section 8: <a href="http://stackoverflow.com/questions/37383187/error-in-firebase-ios-codelab-chat-app-tutorial">stackoverflow link</a></p>
+
+<p>Need to add to the Constants.Swift file</p>
+
+<p><code class="highlighter-rouge">swift static let imageUrl = "imageUrl"</code></p>
+
+<p>All looked good after that and then I caught this error when I complied.</p>
+
+<blockquote>
+  <p>FriendlyChatSwift[7097:353609] <em>** Assertion failure in -[UITableView _endCellAnimationsWithContext:], /BuildRoot/Library/Caches/com.apple.xbs/Sources/UIKit_Sim/UIKit-3512.60.7/UITableView.m:1716 2016-05-28 16:38:42.950 FriendlyChatSwift[7097:353609] **</em> Terminating app due to uncaught exception ‘NSInternalInconsistencyException’, reason: ‘Invalid update: invalid number of rows in section 0. The number of rows contained in an existing section after the update (1) must be equal to the number of rows contained in that section before the update (27), plus or minus the number of rows inserted or deleted from that section (1 inserted, 0 deleted) and plus or minus the number of rows moved into or out of that section (0 moved in, 0 moved out).’</p>
+</blockquote>
+
+<p>Here is the discussion on the <a href="https://github.com/firebase/friendlychat/issues/25">Firebase’s github page</a> on the issue. The answer that ended up working for me came from this source on <a href="http://stackoverflow.com/questions/37400316/image-upload-crash-in-firebase-codelabs-friendlychat-tutorial">stackoverflow.</a></p>
+
+<p>I also found an error in step 10, use this in the viewDidLoad:</p>
+
+<p><code class="highlighter-rouge">swift self.remoteConfig = FIRRemoteConfig.remoteConfig()</code></p>
+
+
+  </section>
+
+</article>
+
+      </div>
+    </div><footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Made by <a href="https://twitter.com/erickuhn19">@erickuhn19</a></p>
+  </div>
+</footer>
+</body>
+
+</html>
