@@ -8,7 +8,7 @@ permalink: /satoshi/bitcoin-whitepaper
 #### <center> Satoshi Nakamoto </center>
 #### <center> satoshin@gmx.com </center>
 #### <center> www.bitcoin.org </center>
-[Read the original pdf at bitcoin.org/bitcoin](http://bitcoin.org/bitcoin)
+[Read the original pdf at bitcoin.org](https://bitcoin.org/bitcoin.pdf)
 
 [Read on the Nakamoto Institute](https://nakamotoinstitute.org/bitcoin/)
 
