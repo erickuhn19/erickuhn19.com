@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-
-
 <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron jumbotron-fluid text-center">
     <div class="container container-fluid">
@@ -12,43 +10,12 @@ layout: default
     </div>
   </div>
 
-  <div class="alert alert-primary text-center" role="alert">
-  <h5>Resources</h5>
-  </div>
-
-  <div class="card-deck">
-    <div class="card text-center">
-      <h5 class="card-header">Satoshi Nakamoto Writings</h5>
-        <div class="card-body">
-          <!-- <h5 class="card-title">Read every email and forum post from Satoshi</h5> -->
-          <p class="card-text">All of the writings of Satoshi Nakamoto (Whitepaper, Emails and Forum Posts)</p>
-          <a href="/satoshi/bitcoin-whitepaper" class="btn btn-primary">Satoshi</a>
-        </div>
-      </div>
-      <div class="card text-center">
-        <h5 class="card-header">Bitcoin Book List</h5>
-          <div class="card-body">
-            <!-- <h5 class="card-title">Read every email and forum post from Satoshi</h5> -->
-            <p class="card-text">Curated list of books for your bitcon education</p>
-            <a href="/bitcoinbooks" class="btn btn-primary">Bitcoin Books</a>
-          </div>
-        </div>
-
-  </div
-
-<hr>
-<br>
-
-<!-- <div class="alert alert-primary text-center" role="alert">
-<h5>Blog</h5>
-</div> -->
-
   <div class="container">
     <div class="alert alert-primary text-center" role="alert">
-    <h5>Last 3 blog posts</h5>
+    <h5>Last 5 blog posts</h5>
     </div>
   <ul>
-    {% for post in site.categories.blog limit:3 %}
+    {% for post in site.categories.blog limit:5 %}
       <li>
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <p>{{ post.date | date: '%B %d, %Y' }}
