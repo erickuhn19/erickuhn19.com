@@ -104,4 +104,8 @@
 <url>
 <loc>http://localhost:4000/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/bitcoin.pdf</loc>
+<lastmod>2021-01-21T10:49:05-08:00</lastmod>
+</url>
 </urlset>
