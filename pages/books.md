@@ -6,13 +6,21 @@ permalink: /books
 # Books
 
 ## Currently Reading:
-* The Reason for God by Tim Keller
+* The Language of God by Francis Collins
+* Shape Up by Ryan Singer
+* Mastering Bitcoin by Andreas Antonopoulis
+
+## Bookshelf
+* Thank God for Bitcoin 
 * The Code Book by Simon Singh
 * How to Take Smart Notes by Sonke Ahrens
-* Cryptonomicon by Neal Stephenson
 * Self-Sovereign Identity by Alex Preukschat and Drummond Reed
 
 ## Past Books I've Read (not in order):
+* When Money dies by Adam Fergusson
+* The Great Mental Models by Shane Parrish
+* Cryptonomicon by Neal Stephenson
+* The Reason for God by Tim Keller
 * Dune by Frank Herbert
 * For a New Livery by Murray N. Rothbard
 * The Lessons of History by Will and Ariel Durant
