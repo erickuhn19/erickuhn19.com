@@ -6,17 +6,18 @@ permalink: /books
 # Books
 
 ## Currently Reading:
-* The Language of God by Francis Collins
+* Terminal List by Jack Carr
+* Thank God for Bitcoin
 * Shape Up by Ryan Singer
 * Mastering Bitcoin by Andreas Antonopoulis
 
 ## Bookshelf
-* Thank God for Bitcoin 
 * The Code Book by Simon Singh
 * How to Take Smart Notes by Sonke Ahrens
 * Self-Sovereign Identity by Alex Preukschat and Drummond Reed
 
 ## Past Books I've Read (not in order):
+* The Language of God by Francis Collins
 * When Money dies by Adam Fergusson
 * The Great Mental Models by Shane Parrish
 * Cryptonomicon by Neal Stephenson
