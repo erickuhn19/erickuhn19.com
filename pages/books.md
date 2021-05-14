@@ -5,8 +5,10 @@ permalink: /books
 ---
 # Books
 
+Updated 05/13/2021
+
 ## Currently Reading:
-* Terminal List by Jack Carr
+* Savage Son by Jack Carr
 * Thank God for Bitcoin
 * Shape Up by Ryan Singer
 * Mastering Bitcoin by Andreas Antonopoulis
@@ -17,6 +19,8 @@ permalink: /books
 * Self-Sovereign Identity by Alex Preukschat and Drummond Reed
 
 ## Past Books I've Read (not in order):
+* True Believer by Jack Carr
+* Terminal List by Jack Carr
 * The Language of God by Francis Collins
 * When Money dies by Adam Fergusson
 * The Great Mental Models by Shane Parrish
