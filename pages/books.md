@@ -5,20 +5,26 @@ permalink: /books
 ---
 # Books
 
-Updated 05/13/2021
+Updated 09/18/2021
 
 ## Currently Reading:
-* Savage Son by Jack Carr
+* The Code Book by Simon Singh
+
+## Bookshelf
+* How to Take Smart Notes by Sonke Ahrens
+* Self-Sovereign Identity by Alex Preukschat and Drummond Reed
 * Thank God for Bitcoin
 * Shape Up by Ryan Singer
 * Mastering Bitcoin by Andreas Antonopoulis
 
-## Bookshelf
-* The Code Book by Simon Singh
-* How to Take Smart Notes by Sonke Ahrens
-* Self-Sovereign Identity by Alex Preukschat and Drummond Reed
-
 ## Past Books I've Read (not in order):
+* Ready Player Two by Ernest Cline (stopped reading half way through)
+* The Blocksize War by Jonathan Bier
+* The Fourth Turning by William Strauss and Neil Howe
+* Atomic Awakening by James Mahaffey
+* The Case for Space by Robert Zubrin
+* Fallen Leaves by Will Durant
+* Savage Son by Jack Carr
 * True Believer by Jack Carr
 * Terminal List by Jack Carr
 * The Language of God by Francis Collins
