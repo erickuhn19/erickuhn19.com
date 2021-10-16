@@ -5,7 +5,7 @@ permalink: /about
 ---
 # About
 
-Working to empower every person and organization on the planet to have a self-sovereign decentralized digital identity. Passionate about bitcoin.
+Working to empower every person and organization on the planet to have a self-sovereign decentralized digital identity with [ION](https://identity.foundation/ion/). Passionate about bitcoin.
 
 [PGP erickuhn19@icloud.com](/pgp.txt) 
 Public Key Fingerprint: 8812 5095 FF24 45CD 804E  B196 5C77 FCF9 784F 62EC
