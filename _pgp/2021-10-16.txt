@@ -1,0 +1,20 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+I've added new PGP keys for erickuhn19@gmail.com, you can find the [public key here.](/pgpgmail.txt) 
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEcZDSDQT/4Dc08tq12j7jxnACN7AFAmFrO/UACgkQ2j7jxnAC
+N7AcFRAAyjx7I8Hh654Kp6zyFpjMc3Kimp/m7rq42edK6AX4x8+tQu+MFGwRznzp
+fADtYWVoLafdAdJxBLtc6zQYGdrD4xlxXzlveZ1nfbnA7OchAXue6kfqawmvzxW6
++b/S7TPgklp55kxP2m16Q6ulxQKTVDFg/hZnmlWHxXbdHpsDm9pF62QIa+5TRdqd
+wwUxkjXq4gUKlNvYrtEGHQQecpSf3vyIIlgZGAYwM/eGrZDFGYiEJJFq7tgAJEbp
+bF5Wt5dZhChe+7O5HwDmidQ8JTgmfEl1P5P8Nt0/Q14Hhprr3ZP3MBCTmbwVaAOU
+UAXOTKn2G1MDJEacqzTQRapFTz9Lt3NlqIc1JWi7Zwy6zTo1TXHOhuOPUU4LPQ8q
+bXqUyryAFTDm0VGBo4GGi50+gz82lWT/pq4kYRsg2PrS9QAyZ4LlWhv4GNGyKXU1
+vE0LOPjR/uCkOFbiJ9tgyxuJ8+tsQj4MOhj0R+LCEsuUwq9Lj0H/fsM4sN61ziKT
+THNATbwf7Jchf9i6b4mIRHR0ZfEySVf2Lhjs5N5T4kTbEHQ1vvRc2zbSBX9M7D9Y
+MUxQxn9gGPJAaed7w8xxjEGsrs9DeGdlCsdZ+1QGBsaG4loLL+gKsCA/Bzr/OSPp
+Jb1F3QdAf7+0rCdfO0+H3F8npBg6A/rufJS7W06X5gdLETCM68M=
+=Dx4p
+-----END PGP SIGNATURE-----
